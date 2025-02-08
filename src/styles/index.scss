@@ -1,0 +1,267 @@
+@use "./abstracts/" as *;
+@use "./base/" as *;
+@use "./layout/" as *;
+@use "./components/" as *;
+@use "./themes/" as *;
+
+.main-page {
+    width: 100%;
+
+    .section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section01 {
+        height: 100dvh;
+        height: 100vh;
+
+        .contents {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    
+        .movie-imgBox {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .popular-seriesBox {
+            width: calc(100% - 10rem);
+            position: absolute;
+            bottom: 5.5rem;
+            left: 0;
+            z-index: 10;
+            margin-inline: $marginInline;
+        }
+    
+        .popular-item {
+            width: 100%;
+            height: 10rem;
+            background-color: rgba(255, 255, 255, 75%);
+            box-shadow: $boxShadow;
+            border-radius: 1.5rem;
+            transition: all .3s ease-in-out;
+    
+            > a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2.4rem;
+                font-weight: 500;
+                letter-spacing: -0.03em;
+                color: $fontBlack;
+            }
+    
+            &:hover {
+                background-color: rgba(0,0,0,75%);
+    
+                > a {
+                    color: $fontWhite;
+                }
+            }
+    
+            html[data-mode="light"] & {
+            
+                background-color: rgba(0, 0, 0, 75%);
+    
+                > a {
+                    color: $fontWhite;
+                }
+    
+                &:hover {
+                    background-color: rgba(255, 255, 255, 75%);
+    
+                    > a {
+                        color: $fontBlack;
+                    }
+                }
+            }
+        }
+    }
+
+    .section02 {
+        padding: 10rem 0;
+
+        .contents {
+            width: auto;
+            margin-inline: 5rem;
+        }
+
+        .contents-box {
+            width: 100%;
+            padding-bottom: 10rem;
+
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+        }
+
+        .item-title {
+            font-size: 2.4rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding-bottom: 3.5rem;
+            margin-bottom: 8rem;
+            border-bottom: 2px solid #777;
+
+            html[data-mode="light"] & {
+        
+                border-bottom: 2px solid #f8f8f8;
+            }
+        }
+
+        .movie-imgBox {
+            overflow: hidden;
+            height: 50rem;
+            border-radius: 1rem;
+            margin-bottom: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease-in-out;
+
+            img {
+                transition: all .3s ease-in-out;
+                border-radius: 1rem;
+            }
+
+            &:hover {
+
+                img {
+                    width: 95%;
+                    height: 95%;
+                }
+            }
+        }
+
+        .movie-title {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.03rem;
+            text-transform: initial;
+        }
+
+        .trending-swiper {
+
+            &:hover {
+
+                .swiper-option {
+                    transition: all .3s ease-in-out;
+                    display: block;
+                }
+            }
+        }
+
+        .seriesSwiper {
+
+            .swiper-wrapper {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+
+    @include w1240 {
+
+        .section01 {
+
+            .popular-seriesBox {
+                width: calc(100% - 6rem);
+                margin-inline: 3rem;
+            }
+        }
+        
+        .section02 {
+
+            .contents {
+                margin-inline: 3rem;
+            }
+        }
+    }
+
+    @include w768 {
+
+        .section01 {
+
+            .popular-item {
+                height: 7rem;
+    
+                > a {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .section02 {
+
+            .item-title {
+                padding-bottom: 3rem;
+                margin-bottom: 5rem;
+            }
+
+            .trending-swiper {
+
+                &:hover {
+    
+                    .swiper-option {
+                        display: none;
+                    }
+                }
+            }
+
+            .seriesSwiper {
+
+                .swiper-wrapper {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    @include w430 {
+        padding-top: 15rem;
+
+        .section01 {
+            height: auto;
+    
+            .movie-imgBox {
+                width: calc(100% - 3rem);
+                margin-inline: 1.5rem;
+                border-radius: 1rem;
+                overflow: hidden;
+                margin-bottom: 3rem;
+            }
+
+            .popular-seriesBox {
+                position: relative;
+                bottom: 0;
+                width: calc(100% - 3rem);
+                margin-inline: 1.5rem;
+            }
+        }
+
+        .section02 {
+            padding: 6.5rem 0;
+
+            .contents {
+                margin-inline: 1.5rem;
+            }
+
+            .contents-box {
+                padding-bottom: 5rem;
+            }
+
+            .movie-imgBox {
+                height: 45rem;
+            }
+
+            .movie-title {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

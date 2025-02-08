@@ -1,0 +1,192 @@
+@use '../abstracts/' as *;
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    .main-page & {
+
+        @include w430 {
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+.swiper-slide {
+
+    .main-page & {
+
+        &-active {
+
+            .movie-title {
+                animation: 1s showText forwards;
+            }
+        }
+    }
+}
+
+.swiper-option {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    translate: 0 -50%;
+    z-index: 100;
+
+    .trending-swiper & {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        translate: 0 -50%;
+        display: none;
+        transition: all .3s ease-in-out;
+    }
+
+    .seriesSwiper & {
+        position: relative;
+        top: 0;
+        translate: none;
+
+        @include w768 {
+            display: none;
+        }
+    }
+
+    .another-series & {
+        width: 20rem;
+        position: relative;
+        top: 0;
+        translate: 0 0;
+
+        @include w1920 {
+            width: 10rem;
+        }
+
+        @include w768 {
+            width: 100%;
+        }
+    }
+}
+
+.swiper-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: $marginInline;
+
+    .trending-swiper & {
+        margin-inline: 2rem;
+    }
+
+    .another-series & {
+        width: 100%;
+        gap: 5rem;
+        justify-content: flex-end;
+        margin: 0;
+
+        @include w768 {
+            justify-content: space-between;
+        }
+    }
+
+    @include w1240 {
+        margin-inline: 3rem;
+    }
+
+    @include w768 {
+
+        .main-page & {
+            display: none;
+        }
+    }
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+
+    .main-page & {
+        position: relative;
+        top: 0;
+        margin-top: 0;
+        width: 2.8rem;
+    }
+
+    .trending-swiper & {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+        background-color: $bgwhite;
+
+        .btn-prev, .btn-next {
+            width: 2rem;
+            filter: invert(0);
+        }
+    }
+
+    .another-series & {
+        position: relative;
+        top: 0;
+        margin-top: 0;
+        width: 2.8rem;
+
+        @include w768 {
+            width: 2rem;
+        }
+    }
+
+    &::after {
+        display: none;
+    }
+}
+
+.swiper-button-prev, 
+.swiper-rtl .swiper-button-next {
+    left: 0;
+}
+
+.swiper-button-next, 
+.swiper-rtl .swiper-button-prev {
+    right: 0;
+}
+
+.swiper-pagination {
+
+    .seriesSwiper & {
+        position: relative;
+        text-align: right;
+        padding-right: 3rem;
+    }
+
+    .swiper-pagination-bullet {
+        width: 5rem;
+        height: 0.3rem;
+        border-radius: 0;
+        background-color: $bgwhite;
+        opacity: 20%;
+        margin: 0 1rem;
+
+        &-active {
+            background-color: $bgwhite;
+            opacity: 100%;
+        }
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, 
+.swiper-pagination-fraction {
+
+    .seriesSwiper & {
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+
+    .seriesSwiper & {
+        margin: 0 1rem;
+    }
+}

@@ -27,7 +27,6 @@ function Result() {
                             <h2 className="a11y-hidden">년도 선택 영역</h2>
                             <div className="chkbox-row">
                                 <h2 className="row-title item-title">year</h2>
-
                                 <div className="row-contentBox">
                                     <ul>
                                         <li><label className="movie-text" for="yearall">All</label><input className="radio yearlist-yearchk" type="radio" name="year" id="yearall" value="all" /></li>
@@ -94,7 +93,6 @@ function Result() {
                             <h2 className="a11y-hidden">타입 선택 영역</h2>
                             <div className="chkbox-row">
                                 <h2 className="row-title item-title">type</h2>
-
                                 <div className="row-contentBox">
                                     <ul >
                                         <li><label className="movie-text" for="genreall">All</label><input className="radio genrelist-genrechk" type="radio" name="genre" id="genreall" value="all" /></li>
@@ -123,8 +121,8 @@ function Result() {
                                         </a>
                                     </li>
                                 ))}
-
                             </ul>
+
                             <div className="itemcontainer-btnbox">
                                 <button className="itemcontainer-btn" aria-label="더보기 버튼"><span className="btn-click">More Movies</span></button>
                             </div>

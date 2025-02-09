@@ -1,8 +1,10 @@
 @use "../abstracts/" as *;
 
-html, body {
+html,
+body {
     touch-action: manipulation;
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 body {

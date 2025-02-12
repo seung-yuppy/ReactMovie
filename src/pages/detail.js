@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/detail.scss"
-import API from "../services/api";
+import API from "../keys/api";
 
 function Detail() {
     const [movie, setMovie] = useState();

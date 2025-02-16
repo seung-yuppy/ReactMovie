@@ -16,7 +16,7 @@ function Main() {
                     </div>
                 </section>
 
-                {/* <section className="section section02">
+                <section className="section section02">
                     <div className="contents">
                         <div className="contents-box">
                             <h2 className="item-title">Trending now</h2>
@@ -36,7 +36,7 @@ function Main() {
                             </div>
                         </div>
                     </div>
-                </section> */}
+                </section>
             </main>
         </>
     );

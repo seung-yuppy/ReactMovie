@@ -1,0 +1,208 @@
+{
+    "trendingMovies": [
+        {
+            "Title": "Interstellar",
+            "Year": "2014",
+            "imdbID": "tt0816692",
+            "Runtime": "169 min",
+            "Type": "movie",
+            "Poster": "./assets/images/poster-Interstellar.jpg"
+        },
+        {
+            "Title": "Dragonkeeper",
+            "Year": "2024",
+            "imdbID": "tt7093904",
+            "Runtime": "98 min",
+            "Type": "movie",
+            "Poster": "./assets/images/poster-Dragonkeeper.png"
+        },
+        {
+            "Title": "Dune: Part Two",
+            "Year": "2024",
+            "imdbID": "tt15239678",
+            "Runtime": "166 min",
+            "Type": "movie",
+            "Poster": "./assets/images/poster-Dune2.jpg"
+        },
+        {
+            "Title": "The Garfield Movie",
+            "Year": "2024",
+            "imdbID": "tt5779228",
+            "Runtime": "101 min",
+            "Genre": "Animation, Adventure, Comedy",
+            "Type": "movie",
+            "Poster": "./assets/images/poster-Thegarfield.jpg"
+        },
+        {
+            "Title": "Alien: Romulus",
+            "Year": "2024",
+            "imdbID": "tt18412256",
+            "Runtime": "119 min",
+            "Genre": "Horror, Sci-Fi, Thriller",
+            "Type": "movie",
+            "Poster": "./assets/images/poster-Alien.jpg"
+        },
+        {
+            "Title": "Kingdom of the Planet of the Apes",
+            "Year": "2024",
+            "imdbID": "tt11389872",
+            "Runtime": "145 min",
+            "Genre": "Action, Adventure, Drama",
+            "Type": "movie",
+            "Poster": "./assets/images/poster-Planetoftheapes.jpg"
+        }
+    ],
+
+    "seriesMovies": [
+        {
+            "Title": "Bridgerton",
+            "Year": "2020–",
+            "imdbID": "tt8740790",
+            "Runtime": "60 min",
+            "Genre": "Drama, Romance",
+            "Type": "series",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.4/10"
+                }
+            ],
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZmRjNDNlMDMtNDZlMS00NzE4LTk0OGMtYjQyMWY3YWFmY2I5XkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "Title": "XO, Kitty",
+            "Year": "2023–",
+            "imdbID": "tt14490706",
+            "Runtime": "N/A",
+            "Genre": "Comedy, Drama, Romance",
+            "Type": "series",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "6.5/10"
+                }
+            ],
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYmQ0MzJlODUtYjI2ZS00ZWQzLTkxYzYtNjRjNDZlZTgzNmRkXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "Title": "From Scratch",
+            "Year": "2022",
+            "imdbID": "tt11252254",
+            "Runtime": "N/A",
+            "Genre": "Drama, Romance",
+            "Type": "series",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.9/10"
+                }
+            ],
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYzVkNWY5M2EtZjk0NC00MjY2LTgzNzYtMjZhMTI1NzAxMDBhXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Emily in Paris",
+            "Year": "2020–",
+            "imdbID": "tt8962124",
+            "Runtime": "30 min",
+            "Genre": "Comedy, Drama, Romance",
+            "Type": "series",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "6.8/10"
+                }
+            ],
+            "Poster": "https://m.media-amazon.com/images/M/MV5BODI5Y2YxM2UtZjhjYy00ZjM0LTg3NjQtYjQxMTBmZjM4ZTlkXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Sherlock",
+            "Year": "2010–2017",
+            "imdbID": "tt1475582",
+            "Runtime": "88 min",
+            "Genre": "Crime, Drama, Mystery",
+            "Type": "series",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "9.1/10"
+                }
+            ],
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNTQzNGZjNDEtOTMwYi00MzFjLWE2ZTYtYzYxYzMwMjZkZDc5XkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Stranger Things",
+            "Year": "2016–2025",
+            "imdbID": "tt4574334",
+            "Runtime": "51 min",
+            "Genre": "Drama, Fantasy, Horror",
+            "Type": "series",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.7/10"
+                }
+            ],
+            "Poster": "https://m.media-amazon.com/images/M/MV5BOWU2NjY5NWQtMjdkZi00ODJlLThkZTAtMzFlYmJmMGE2NjZkXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Modern Family",
+            "Year": "2009–2020",
+            "imdbID": "tt1442437",
+            "Runtime": "22 min",
+            "Genre": "Comedy, Drama, Romance",
+            "Type": "series",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.5/10"
+                }
+            ],
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYzFlOWFjNzQtODViNC00NzgzLThhZmItZTc1N2VlZDgwODUwXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Wednesday",
+            "Year": "2022–",
+            "imdbID": "tt13443470",
+            "Runtime": "N/A",
+            "Genre": "Comedy, Crime, Fantasy",
+            "Type": "series",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.1/10"
+                }
+            ],
+            "Poster": "https://m.media-amazon.com/images/M/MV5BY2E1NDI5OWEtODJmYi00Nzg2LWI4MjUtODFiMTU2YWViOTU3XkEyXkFqcGc@._V1_SX300.jpg"
+          },
+          {
+            "Title": "Squid Game",
+            "Year": "2021–2025",
+            "imdbID": "tt10919420",
+            "Runtime": "N/A",
+            "Genre": "Action, Drama, Mystery",
+            "Type": "series",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.0/10"
+                }
+            ],
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTg5NjY0NGEtMDFhOS00MzJiLTg1NWEtZDhhNWQ5MmE4ZWIxXkEyXkFqcGc@._V1_SX300.jpg"
+          },
+          {
+            "Title": "Desperate Housewives",
+            "Year": "2004–2012",
+            "imdbID": "tt0410975",
+            "Runtime": "45 min",
+            "Genre": "Comedy, Drama, Mystery",
+            "Type": "series",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.6/10"
+                }
+            ],
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMDljYmI5OTktNDFmNC00NmIxLWFhODktM2YyM2JlODVmMWUwXkEyXkFqcGc@._V1_SX300.jpg"
+          }
+    ]
+}

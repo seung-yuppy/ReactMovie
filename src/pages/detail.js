@@ -18,7 +18,13 @@ function Detail() {
     }, [imdbId]);
 
     if (!movie) {
-        return <h1>Loading...</h1>
+        return (
+            <>
+                <div class="spinner-box">
+                    <div class="spinner-img"></div>
+                </div>
+            </>
+        );
     };
 
     if (movie.Poster) {

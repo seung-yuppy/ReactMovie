@@ -2,7 +2,8 @@ import "../styles/index.scss";
 import "swiper/swiper-bundle.css";
 import PopularSeries from "./popularSeries";
 import MainSlider from "./mainSlider";
-
+import MovieSlider from "./movieSlider";
+import SeriesSlider from "./seriesSlider";
 
 function Main() {
     return (
@@ -21,19 +22,13 @@ function Main() {
                         <div className="contents-box">
                             <h2 className="item-title">Trending now</h2>
                             <h2 className="a11y-hidden">유행하는 영화 슬라이드 영역</h2>
-                            <div className="slide-box">
-                                <div className="swiper trending-swiper">
-                                </div>
-                            </div>
+                            <MovieSlider />
                         </div>
 
                         <div className="contents-box">
                             <h2 className="item-title">Series</h2>
                             <h2 className="a11y-hidden">시리즈 슬라이드 영역</h2>
-                            <div className="slide-box">
-                                <div className="swiper seriesSwiper">
-                                </div>
-                            </div>
+                            <SeriesSlider />
                         </div>
                     </div>
                 </section>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../styles/index.scss"
 import { useNavigate } from "react-router-dom";
+import "../styles/index.scss";
 
 function Header() {
     const [input, setInput] = useState("");

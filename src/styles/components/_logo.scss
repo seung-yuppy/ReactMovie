@@ -3,8 +3,7 @@
 .logo {
     font-size: 3rem;
     font-weight: 800;
-    // color: $fontWhite;
-    color: $fontBlack;
+    color: $fontWhite;
 
     html[data-mode="light"] & {
         color: $fontBlack;

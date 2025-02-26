@@ -42,22 +42,35 @@ function SeriesSlider() {
                             },
                         }}
                     >
-                        {movies && movies.map((movie) => (
-                            <SwiperSlide key={movie.imdbID}>
-                                <a href={`/detail/${movie.imdbID}`} className="slide-item">
-                                    <div className="movie-imgBox">
-                                        <img src={movie.Poster} alt="Series" />
-                                    </div>
-                                    <div className="movie-infoBox">
-                                        <h2 className="movie-title">{movie.Title}</h2>
-                                        <div className="movie-info">
-                                            <p className="movie-ratings">{movie.Ratings[0].Value}</p>
-                                            <p className="movie-type">{movie.Genre}</p>
+                        {movies &&
+                            movies.map((movie) => (
+                                <SwiperSlide key={movie.imdbID}>
+                                    <a
+                                        href={`/detail/${movie.imdbID}`}
+                                        className="slide-item"
+                                    >
+                                        <div className="movie-imgBox">
+                                            <img
+                                                src={movie.Poster}
+                                                alt="Series"
+                                            />
                                         </div>
-                                    </div>
-                                </a>
-                            </SwiperSlide>
-                        ))}
+                                        <div className="movie-infoBox">
+                                            <h2 className="movie-title">
+                                                {movie.Title}
+                                            </h2>
+                                            <div className="movie-info">
+                                                <p className="movie-ratings">
+                                                    {movie.Ratings[0].Value}
+                                                </p>
+                                                <p className="movie-type">
+                                                    {movie.Genre}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </SwiperSlide>
+                            ))}
                     </Swiper>
                 </div>
             </div>

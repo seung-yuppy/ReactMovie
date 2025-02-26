@@ -1,4 +1,4 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
 .form {
     display: flex;
@@ -17,8 +17,10 @@
     border-radius: 5rem;
     border: 2px solid $borderColor;
     outline: none;
-    background: url(../../assets/images/ico-downArrow-black.svg) calc(100% - 5px) center no-repeat;
+    background: url(../../assets/images/ico-downArrow.svg) calc(100% - 5px)
+        center no-repeat;
     background-size: 2rem;
+    color: #fff;
 
     -o-appearance: none;
     -webkit-appearance: none;
@@ -36,7 +38,8 @@
     html[data-mode="light"] & {
         color: $fontBlack;
         border: 2px solid $bgblack;
-        background: url(../../assets/images/ico-downArrow.svg) calc(100% - 5px) center no-repeat;
+        background: url(../../assets/images/ico-downArrow-black.svg)
+            calc(100% - 5px) center no-repeat;
         background-size: 2rem;
     }
 
@@ -61,8 +64,7 @@
     border-radius: 5rem;
     border: 2px solid $borderColor;
     outline: none;
-    // color: #fff;
-    color: $fontBlack;
+    color: #fff;
 
     .filter-box & {
         width: 100%;

@@ -43,9 +43,7 @@ function PopularSeries() {
                                 popularMovies.map((popularMovie, index) => (
                                     <SwiperSlide key={index}>
                                         <li className="swiper-slide popular-item">
-                                            <a
-                                                href={`/result/${popularMovie}/all/all`}
-                                            >
+                                            <a href={`/result/${popularMovie}`}>
                                                 {popularMovie}
                                             </a>
                                         </li>

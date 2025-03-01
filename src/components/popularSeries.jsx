@@ -2,7 +2,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 function PopularSeries() {
     // 하단부 인기영화 시리즈 버튼 만들기
-    const popularMovies = ['Avengers', 'Spider-Man', 'Harry Potter', 'Frozen', 'Transformers', 'Dune', 'Home Alone'];
+    const popularMovies = [
+        "Avengers",
+        "Spider-Man",
+        "Harry Potter",
+        "Frozen",
+        "Transformers",
+        "Dune",
+        "Home Alone",
+    ];
 
     return (
         <>
@@ -28,16 +36,21 @@ function PopularSeries() {
                                 },
                                 1300: {
                                     slidesPerView: 7,
-                                }
+                                },
                             }}
                         >
-                            {popularMovies && popularMovies.map((popularMovie, index) => (
-                                <SwiperSlide key={index}>
-                                    <li className="swiper-slide popular-item">
-                                        <a href={`/result/${popularMovie}`}>{popularMovie}</a>
-                                    </li>
-                                </SwiperSlide>
-                            ))}
+                            {popularMovies &&
+                                popularMovies.map((popularMovie, index) => (
+                                    <SwiperSlide key={index}>
+                                        <li className="swiper-slide popular-item">
+                                            <a
+                                                href={`/result/${popularMovie}/all/all`}
+                                            >
+                                                {popularMovie}
+                                            </a>
+                                        </li>
+                                    </SwiperSlide>
+                                ))}
                         </Swiper>
                     </ul>
                 </div>

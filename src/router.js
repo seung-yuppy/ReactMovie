@@ -4,7 +4,6 @@ import Result from "./pages/result";
 import Detail from "./pages/detail";
 import Home from "./pages/home";
 
-
 export const Router = createBrowserRouter([
     {
         path: "/",
@@ -12,16 +11,16 @@ export const Router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <Home />
+                element: <Home />,
             },
             {
-                path: "result/:search",
-                element: <Result />
+                path: "result/:search/:year/:type",
+                element: <Result />,
             },
             {
                 path: "detail/:id",
-                element: <Detail />
+                element: <Detail />,
             },
-        ]
-    }
-])
+        ],
+    },
+]);
